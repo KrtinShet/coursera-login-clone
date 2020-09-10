@@ -56,6 +56,10 @@ body {
 }
 
 /* utility classes */
+.active {
+  font-weight: bold;
+  border-bottom: #fff solid 2px;
+}
 .l-heading {
   font-size: 4rem;
   font-weight: 400;
@@ -222,10 +226,16 @@ input:active {
 .auth-mode ul li a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 /* END OF authmode login and signup */
 /*  */
 /*  */
+.uparrow {
+  color: red;
+  z-index: 2;
+  position: absolute;
+}
 /* START OF AUTH MODE CONTENT */
 .auth-mode-content {
   border-radius: 50px;
@@ -237,6 +247,7 @@ input:active {
   align-items: center;
   position: relative;
 }
+
 /* END OF AUTH MODE CONTENT */
 /*  */
 
@@ -282,3 +293,6 @@ input:active {
   flex-direction: column;
 }
 /*  END OF AUTH FORM*/
+#signupForm {
+  display: none;
+}

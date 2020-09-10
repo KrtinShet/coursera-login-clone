@@ -38,8 +38,8 @@
       <div class="auth-content">
         <div class="auth-mode">
           <ul>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Sign Up</a></li>
+            <li><a id="auth-login" class="active">Log In</a></li>
+            <li><a id="auth-signup">Sign Up</a></li>
           </ul>
         </div>
         <div class="auth-mode-content">
@@ -50,7 +50,7 @@
             >
           </div>
           <div class="authform">
-            <form action="#">
+            <form id="signupForm">
               <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" />
@@ -66,6 +66,19 @@
               <div>
                 <label for="confirmPassword">Confirm Password</label>
                 <input type="password" id="confirmPassword" />
+              </div>
+              <div>
+                <a class="btn-submit" type="submit">Submit</a>
+              </div>
+            </form>
+            <form id="loginForm">
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" />
               </div>
               <div>
                 <a class="btn-submit" type="submit">Submit</a>
