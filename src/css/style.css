@@ -30,6 +30,7 @@ body {
   text-decoration: none;
   color: white;
   padding: 0.5rem 0;
+  cursor: pointer;
 }
 .navbar ul li a:hover {
   border-bottom: #33f9ff 2px solid;
