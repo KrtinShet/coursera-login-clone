@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
     <title>Coursera Login</title>
@@ -20,7 +18,7 @@
       <ul>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">Login / Signup</a></li>
+        <li><a id="signuplogin" href="#">Login / Signup</a></li>
       </ul>
     </nav>
     <section class="banner">
@@ -36,6 +34,48 @@
       </div>
     </section>
 
+    <div id="authModal" class="auth-bg">
+      <div class="auth-content">
+        <div class="auth-mode">
+          <ul>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="auth-mode-content">
+          <span id="closeModalBtn">&times;</span>
+          <div class="auth-oauth">
+            <a class="google-btn" href="">
+              <i class="fa fa-google text-white mr-3"></i>Login with Google</a
+            >
+          </div>
+          <div class="authform">
+            <form action="#">
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" />
+              </div>
+              <div>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" />
+              </div>
+              <div>
+                <a class="btn-submit" type="submit">Submit</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="what" class="bg-light py-1">
       <div class="container">
         <h2 class="m-heading text-center">
@@ -43,7 +83,7 @@
         </h2>
         <div class="items">
           <div class="item">
-            <i class="fas fa-university fa-2x"></i>
+            <i class="fa fa-university fa-2x"></i>
             <div>
               <h3>Investement Banking</h3>
               <p>
@@ -53,7 +93,7 @@
             </div>
           </div>
           <div class="item">
-            <i class="fas fa-book-reader fa-2x"></i>
+            <i class="fa fa-book fa-2x"></i>
             <div>
               <h3>Portfolio Management</h3>
               <p>
@@ -63,7 +103,7 @@
             </div>
           </div>
           <div class="item">
-            <i class="fas fa-pencil-alt fa-2x"></i>
+            <i class="fa fa-pencil fa-2x"></i>
             <div>
               <h3>Tax & Custodials</h3>
               <p>
