@@ -7,7 +7,8 @@ const authLogin = document.getElementById('auth-login');
 const authSignup = document.getElementById('auth-signup');
 const signupForm = document.getElementById('signupForm');
 const loginForm = document.getElementById('loginForm');
-
+const hamburger = document.getElementById('hamburger');
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 const buildForm = function (formData) {
   let form = document.createElement('form');
   form.setAttribute('class', 'auth-form');
@@ -42,3 +43,10 @@ authSignup.addEventListener('click', function (e) {
   loginForm.style.display = 'none';
   signupForm.style.display = 'block';
 });
+function handleHamburger() {
+  this.classList.toggle('hamburger-active');
+  if (this.classList.contains('hamburger-active'))
+    navbarLinks.style.display = 'flex';
+  else navbarLinks.style.display = 'none';
+}
+hamburger.addEventListener('click', handleHamburger);

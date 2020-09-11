@@ -14,7 +14,7 @@ body {
   width: 100%;
   z-index: 1;
   justify-content: space-between;
-  padding: 1.25rem 3.25rem;
+  padding: 1.5rem 3.25rem;
   align-items: center;
   transition: background-colorf;
 }
@@ -46,8 +46,8 @@ body {
 }
 .banner-content {
   position: absolute;
-  top: 35%;
-  left: 10%;
+  top: 11rem;
+  left: 9rem;
 }
 .banner p {
   color: white;
@@ -162,6 +162,7 @@ input:active {
 
 /* what we do */
 #what {
+  flex-wrap: wrap;
   background: rgba(158, 97, 97, 0.1);
 }
 #what .items {
@@ -196,7 +197,7 @@ input:active {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: 2;
   display: none;
   justify-content: center;
@@ -240,23 +241,23 @@ input:active {
 .auth-mode-content {
   border-radius: 50px;
   display: flex;
-  width: 30%;
+  width: 30vw;
   height: auto;
   flex-direction: column;
   background-color: #f4f4f4;
   align-items: center;
-  position: relative;
 }
 
 /* END OF AUTH MODE CONTENT */
 /*  */
 
 #closeModalBtn {
-  font-size: 1.75rem;
-  position: absolute;
-  top: 2%;
-  right: 7%;
+  font-size: 3rem;
   cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 2rem;
 }
 /* START OF AUTH-OAUTH */
 .auth-oauth {
@@ -266,7 +267,7 @@ input:active {
 .google-btn {
   text-decoration: none;
   color: #fff;
-  background-color: red;
+  background-color: rgb(235, 41, 41);
   padding: 0.5rem 3rem;
   border: #9f9f9f solid 1px;
   border-radius: 50px;
@@ -295,4 +296,45 @@ input:active {
 /*  END OF AUTH FORM*/
 #signupForm {
   display: none;
+}
+/* Hambrger */
+.hamburger-icon-container {
+  position: absolute;
+  cursor: pointer;
+  width: 2rem;
+  height: 1.5rem;
+  display: none;
+}
+.hamburger-icon {
+  transform: translateY(-50%);
+}
+.hamburger-icon,
+.hamburger-icon:before,
+.hamburger-icon:after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: white;
+  transition: all 0.2s ease;
+}
+.hamburger-icon {
+  top: 10%;
+  left: 3%;
+}
+.hamburger-icon:before {
+  top: -200%;
+}
+.hamburger-icon:after {
+  top: 200%;
+}
+.hamburger-active .hamburger-icon {
+  transform: rotate(45deg) translate(-2px, -2px); /* translate to raise cross to optically centered position*/
+}
+.hamburger-active .hamburger-icon:before,
+.hamburger-active .hamburger-icon:after {
+  top: 7%;
+}
+.hamburger-active .hamburger-icon:before {
+  transform: rotate(90deg);
 }

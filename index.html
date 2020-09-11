@@ -8,6 +8,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="./src/css/mobile.css"
+    />
     <title>Coursera Login</title>
   </head>
   <body>
@@ -15,7 +20,10 @@
       <h1 class="nav-header">
         <span class="primary-text">Coursera</span> Login
       </h1>
-      <ul>
+      <div id="hamburger" class="hamburger-icon-container">
+        <span class="hamburger-icon"></span>
+      </div>
+      <ul class="navbar-links">
         <li><a>About Us</a></li>
         <li><a>Contact</a></li>
         <li><a id="signuplogin">Login / Signup</a></li>
@@ -25,7 +33,7 @@
       <div class="banner-content">
         <h1 class="l-heading">You are reflection of your work</h1>
         <!-- <h4 id="heightshow">height:</h4> -->
-        <p>
+        <p class="lead">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
           laborum reprehenderit voluptatem modi maiores at accusantium fugiat
           mollitia?
